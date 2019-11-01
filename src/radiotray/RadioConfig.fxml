@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="378.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="radiotray.RadioConfigController">
+    <stylesheets>
+        <URL value="@radioconfig.css" />
+    </stylesheets>
+   <children>
+      <ListView fx:id="lstStations" layoutX="23.0" layoutY="47.0" prefHeight="182.0" prefWidth="340.0" />
+      <Label layoutX="23.0" layoutY="279.0" text="Station Name:" />
+      <TextField fx:id="txtName" layoutX="115.0" layoutY="275.0" prefHeight="25.0" prefWidth="248.0" />
+      <Label layoutX="115.0" layoutY="315.0" text="Station Stream URL:" />
+      <TextField fx:id="txtUrl" layoutX="23.0" layoutY="332.0" prefHeight="25.0" prefWidth="340.0" />
+      <Button fx:id="btnSave" disable="true" layoutX="148.0" layoutY="366.0" mnemonicParsing="false" onAction="#btnSaveAction" text="Save Station" />
+      <Button fx:id="btnAdd" layoutX="298.0" layoutY="236.0" mnemonicParsing="false" onAction="#btnAddAction" text="Add New" />
+   </children>
+</AnchorPane>
